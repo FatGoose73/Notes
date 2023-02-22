@@ -35,3 +35,18 @@ task2扩展阅读：https://github.com/TommyZihao/zihao_course/blob/main/CS224W/
 
 教程开源内容：https://github.com/TommyZihao/zihao_course/tree/main/CS224W
 教程B 站视频：https://space.bilibili.com/1900783/channel/collectiondetail?sid=915098
+
+
+
+
+
+### Task-03
+今天我们将开始task3的学习！明晚睡觉前（19日凌晨3:00前）需要完成task3打卡！
+本任务内容为“NetworkX工具包实战”，对应github中“NetworkX代码实战”和B站视频“图机器学习NetworkX代码实战-创建图和可视化”、“图机器学习NetworkX代码实战-上海地铁站点图数据挖掘”部分~
+task3视频：
+https://www.bilibili.com/video/BV1kM41147zV
+https://www.bilibili.com/video/BV1r3411m7sD
+
+教程开源内容：https://github.com/TommyZihao/zihao_course/tree/main/CS224W
+教程B 站视频：https://space.bilibili.com/1900783/channel/collectiondetail
+

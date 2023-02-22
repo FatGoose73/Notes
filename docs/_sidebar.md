@@ -1,6 +1,6 @@
 - CS224W
-  - [Task 01](cs224w/01-intro.md)
-
+  - [Task 01](./cs224w/01-intro.md)
+  - [Task 02](./cs224w/02-tradition-ml.md)
 
 
 - Linux基础
