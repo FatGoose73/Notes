@@ -7,7 +7,7 @@
     <meta name="description" content="Description">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@latest/lib/themes/buble.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@latest/lib/themes/vue.css">
 </head>
 <body>
 <div id="app"></div>
@@ -16,13 +16,14 @@
         name: 'Notes',
         // repo: 'https://github.com/Relph1119/my-team-learning',
         loadSidebar: true,
-        auto2top: true,
-        coverpage:true,
-        sidebarDisplayLevel: 1,
-        subMaxLevel: 1,
         alias: {
             '/.*/_sidebar.md': '/_sidebar.md'
         },
+        auto2top: true,
+        coverpage:true,
+        subMaxLevel: 3,
+        sidebarDisplayLevel: 1,
+
         pagination: {
             previousText: '上一章节',
             nextText: '下一章节',
@@ -45,6 +46,12 @@
 </script>
 <!-- Put them above docsify.min.js -->
 <script src="//cdn.jsdelivr.net/npm/docsify@latest/lib/docsify.min.js"></script>
+
+<!-- sidebar collapse -->
+<!-- <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse@latest/dist/docsify-sidebar-collapse.min.js"></script> -->
+<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
+
 <!-- code render-->
 <script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-bash.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-python.min.js"></script>
@@ -57,8 +64,7 @@
 <!-- CDN files for docsify-katex -->
 <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
 
-<!-- sidebar collapse -->
-<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse@latest/dist/docsify-sidebar-collapse.min.js"></script>
+
 <!-- search -->
 <script src="//cdn.jsdelivr.net/npm/docsify@latest/lib/plugins/search.js"></script>
 <!-- count -->
