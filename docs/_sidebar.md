@@ -2,6 +2,7 @@
   - [Task 01](./cs224w/01-intro.md)
   - [Task 02](./cs224w/02-tradition-ml.md)
   - [networkX 基础](./cs224w/networkx_basic.md)
+  - [networkX 实战](./cs224w/networkx_example.md)
 
 
 - Linux基础
