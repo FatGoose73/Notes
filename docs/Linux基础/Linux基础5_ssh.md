@@ -1,15 +1,9 @@
----
-title: Linux基础(五)：ssh
-date: 2022-02-21 23:17:00
-tags: [Linux, ssh]
-categories: 教程
-cover: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsh.tedu.cn%2Fupload%2F20181116%2F20181116101135_624.jpg&refer=http%3A%2F%2Fsh.tedu.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648048575&t=8b04d38f8a99b905ac07587a95a3e0a7
-mathjax: true
----
+# ssh
 
-#### ssh登录
 
-##### 基本用法
+## 1 ssh登录
+
+### 1.1 基本用法
 
 远程登录服务器：
 
@@ -40,7 +34,7 @@ ssh user@hostname -p 22
 
 ---
 
-##### 配置文件
+### 1.2 配置文件
 
 创建文件`~/.ssh/config`。
 
@@ -60,7 +54,7 @@ Host myserver2
 
 ---
 
-##### 密钥登录
+### 1.3 密钥登录
 
 创建密钥：
 
@@ -88,7 +82,7 @@ ssh-copy-id myserver
 
 ---
 
-##### 执行命令
+### 1.4 执行命令
 
 命令格式：
 ```shell
@@ -111,9 +105,9 @@ ssh myserver "for ((i = 0; i < 10; i ++ )) do echo $i; done"
 
 ---
 
-#### scp传文件
+## 2 scp传文件
 
-##### 基本用法
+### 2.1 基本用法
 
 命令格式：
 ```shell
@@ -145,7 +139,7 @@ scp -P 22 source1 source2 destination
 ```
 注意： `scp`的`-r` `-P`等参数尽量加在`source`和`destination`之前。
 
-##### 使用**scp**配置其他服务器的**vim**和**tmux**
+### 2.2 使用**scp**配置其他服务器的**vim**和**tmux**
 ```shell
 scp ~/.vimrc ~/.tmux.conf myserver:
 ```

@@ -21,7 +21,7 @@
         },
         auto2top: true,
         coverpage: false,
-        subMaxLevel: 0,
+        subMaxLevel: 3,
         sidebarDisplayLevel: 1,
 
         pagination: {
@@ -44,8 +44,19 @@
         }
     }
 </script>
+
 <!-- Put them above docsify.min.js -->
 <script src="//cdn.jsdelivr.net/npm/docsify@latest/lib/docsify.min.js"></script>
+
+
+<!-- PDFObject.js is a required dependency of this plugin -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script> 
+<!-- This is the source code of the pdf embed plugin -->
+<script src="path-to-file/docsify-pdf-embed.js"></script>
+<!-- or use this if you are not hosting the file yourself -->
+<script src="//unpkg.com/docsify-pdf-embed-plugin/src/docsify-pdf-embed.js"></script>
+
+
 
 <!-- sidebar collapse -->
 <!-- <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse@latest/dist/docsify-sidebar-collapse.min.js"></script> -->
@@ -53,8 +64,11 @@
 
 
 <!-- code render-->
+<script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-c.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-cpp.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-bash.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-python.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-cs.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify-pagination@latest/dist/docsify-pagination.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
 

@@ -1,20 +1,14 @@
----
-title: Linux基础(六)：Git
-date: 2022-02-21 23:17:00
-tags: [Linux, Git]
-categories: 教程
-cover: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsh.tedu.cn%2Fupload%2F20181116%2F20181116101135_624.jpg&refer=http%3A%2F%2Fsh.tedu.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648048575&t=8b04d38f8a99b905ac07587a95a3e0a7
-mathjax: true
----
+# Git
 
-#### git基本概念
+
+## 1 git基本概念
 
 - 工作区：仓库的目录。工作区是独立于各个分支的。
 - 暂存区：数据暂时存放的区域，类似于工作区写入版本库前的缓存区。暂存区是独立于各个分支的。
 - 版本库：存放所有已经提交到本地仓库的代码版本
 - 版本结构：树结构，树中每个节点代表一个代码版本。
 
-#### git常用命令
+## 2 git常用命令
 
 1. `git config --global user.name xxx`：设置全局用户名，信息记录在`~/.gitconfig`文件中
 2. `git config --global user.email xxx@xxx.com`：设置全局邮箱地址，信息记录在`~/.gitconfig`文件中

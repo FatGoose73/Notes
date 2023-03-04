@@ -1,11 +1,5 @@
----
-title: Linux基础(一)：常用文件管理命令
-date: 2022-02-21 23:17:00
-tags: [Linux]
-categories: 教程
-cover: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsh.tedu.cn%2Fupload%2F20181116%2F20181116101135_624.jpg&refer=http%3A%2F%2Fsh.tedu.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648048575&t=8b04d38f8a99b905ac07587a95a3e0a7
-mathjax: true
----
+# 常用文件管理命令
+
 
 ```
 (1) ctrl c: 取消命令，并且换行

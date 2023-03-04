@@ -1,13 +1,7 @@
----
-title: Linux基础(四)：shell语法
-date: 2022-02-21 23:17:00
-tags: [Linux, shell]
-categories: 教程
-cover: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsh.tedu.cn%2Fupload%2F20181116%2F20181116101135_624.jpg&refer=http%3A%2F%2Fsh.tedu.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1648048575&t=8b04d38f8a99b905ac07587a95a3e0a7
-mathjax: true
----
+# shell语法
 
-## 概论
+
+## 1 概论
 
 ### 概论
 
@@ -55,7 +49,7 @@ Hello World!  # 脚本输出
 acs@9e0ebfcd82d7:~$ bash test.sh
 Hello World!  # 脚本输出
 ```
-## 注释
+## 2 注释
 
 ### 单行注释
 
@@ -89,7 +83,7 @@ abc
 第三行注释
 !
 ```
-## 变量
+## 3 变量
 
 ### 定义变量
 
@@ -166,7 +160,7 @@ echo ${#name}  # 输出3
 name="hello, yxc"
 echo ${name:0:5}  # 提取从0开始的5个字符
 ```
-## 默认变量
+## 4 默认变量
 
 ### 文件参数变量
 
@@ -204,7 +198,7 @@ acs@9e0ebfcd82d7:~$ ./test.sh 1 2 3 4
 |`$(command)`	|返回`command`这条命令的stdout（可嵌套）|
 |\`command\`	|返回`command`这条命令的stdout（不可嵌套）|
 
-## 数组
+## 5 数组
 数组中可以存放多个不同类型的值，只支持一维数组，初始化时不需要指明数组大小。
 数组**下标从0开始**。
 
@@ -262,7 +256,7 @@ array=(1 abc "def" yxc)
 echo ${#array[@]}  # 第一种写法
 echo ${#array[*]}  # 第二种写法
 ```
-## expr命令
+## 6 expr命令
 
 `expr`命令用于求表达式的值，格式为：
 ```shell
@@ -348,7 +342,7 @@ echo `expr $c \| $d`  # 输出5
 echo `expr $a \| $b`  # 输出3
 ```
 
-## read命令
+## 7 read命令
 `read`命令用于从标准输入中读取单行数据。当读到文件结束符时，`exit code`为1，否则为0。
 
 参数说明
@@ -366,7 +360,7 @@ Please input your name: acwing yxc  # 标准输入
 acs@9e0ebfcd82d7:~$ echo $name  # 输出name的值
 acwing yxc  # 标准输出
 ```
-## echo命令
+## 8 echo命令
 `echo`用于输出字符串。命令格式：
 ```shell
 echo STRING
@@ -428,7 +422,7 @@ echo `date`
 Wed Sep 1 11:45:33 CST 2021
 ```
 
-## printf命令
+## 9 printf命令
 `printf`命令用于格式化输出，类似于`C/C++`中的`printf`函数。
 
 默认**不会在字符串末尾添加换行符**。
@@ -454,7 +448,7 @@ My name is yxc
 2 * 3 = 6
 ```
 
-## test命令与判断符号[]
+## 10 test命令与判断符号[]
 ### 逻辑运算符&&和||
 
 - `&&` 表示与，`||` 表示或
@@ -564,7 +558,7 @@ name="acwing yxc"
 [ $name == "acwing yxc" ]  # 错误，等价于 [ acwing yxc == "acwing yxc" ]，参数太多
 [ "$name" == "acwing yxc" ]  # 正确
 ```
-## 判断语句
+## 11 判断语句
 **if…then**形式
 
 类似于`C/C++`中的`if-else`语句。
@@ -718,7 +712,7 @@ esac
 其他
 ```
 
-## 循环语句
+## 12 循环语句
 ### for…in…do…done
 
 命令格式：
@@ -862,7 +856,7 @@ done
 1. 使用`top`命令找到进程的PID
 2. 输入`kill -9 PID`即可关掉此进程
 
-## 函数
+## 13 函数
 
 `bash`中的函数类似于`C/C++`中的函数，但`return`的返回值与`C/C++`不同，返回的是`exit code`，取值为0-255，0表示正常结束。
 
@@ -982,7 +976,7 @@ yxc
 ```
 第一行为函数内的name变量，第二行为函数外调用name变量，会发现此时该变量不存在。
 
-## exit命令
+## 14 exit命令
 `exit`命令用来退出当前`shell`进程，并返回一个退出状态；使用`$?`可以接收这个退出状态。
 
 `exit`命令可以接受一个整数值作为参数，代表退出状态。如果不指定，默认状态值是 0。
@@ -1016,7 +1010,7 @@ arguments not valid
 acs@9e0ebfcd82d7:~$ echo $?  # 传入参数个数不是1，则非正常退出，exit code为1
 1
 ```
-## 文件重定向
+## 15 文件重定向
 每个进程默认打开3个文件描述符：
 
 - `stdin`标准输入，从命令行读取数据，文件描述符为0
@@ -1068,7 +1062,7 @@ acs@9e0ebfcd82d7:~$ cat output.txt  # 查看output.txt中的内容
 7
 ```
 
-## 引入外部脚本
+## 16 引入外部脚本
 类似于`C/C++`中的`include`操作，`bash`也可以引入其他文件中的代码。
 
 语法格式：
